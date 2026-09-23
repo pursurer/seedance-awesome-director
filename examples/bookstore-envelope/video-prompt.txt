@@ -1,0 +1,16 @@
+Create a 12-second, 16:9 photorealistic video from the two attached images.
+
+REFERENCE ROLES AND PRECEDENCE
+Image 1 is the identity and wardrobe reference only: the same fictional woman, chin-length black bob, round black-frame glasses, mustard-yellow raincoat with one navy square patch on her LEFT upper sleeve, and one cobalt-blue envelope. Do not copy Image 1's studio background, neutral pose, or camera framing.
+Image 2 is the exact storyboard reference for location, action, shot composition, camera direction, and order. If the images disagree about pose or layout, follow Image 2 for pose and layout, and Image 1 for identity and wardrobe.
+
+GLOBAL CONTINUITY
+There is exactly one woman and exactly one blue envelope. Keep her face, glasses, hair, raincoat, and left-sleeve patch stable in all four shots, including when she turns and crosses the doorway. Keep the same green bookstore, brass handle, and oak counter. Preserve the envelope's state across cuts: in her right hand through shots 1 and 2; placed on the counter during shot 3; left on the counter in shot 4. No teleporting, duplication, or unexplained hand changes.
+
+SHOT ORDER — one shot per panel, approximately three seconds each
+0–3s, Shot 1: Wide exterior. She walks toward the green bookstore on the damp sidewalk, blue envelope in her right hand. End with her reaching the door.
+3–6s, Shot 2: Medium threshold. Continue her motion from Shot 1. She opens the door with her left hand while keeping the envelope in her right. End with her stepping inside.
+6–9s, Shot 3: Medium interior. Continue from the threshold to the nearby oak counter. She places the same envelope on the counter with her right hand, then releases it. End with the envelope resting on the counter.
+9–12s, Shot 4: Wide interior. She turns and walks toward the same green door, now empty-handed. Keep the one blue envelope visible on the oak counter in the background. End on a clear frame showing both her departure and the envelope's location.
+
+FOLLOW THE FOUR PANELS IN ORDER. Do not skip or add scenes. Use natural handheld camera movement and rainy-day light outdoors, warm practical light inside. Clean cuts with continuous action across boundaries. Subtle footsteps, door handle and door sounds only. No music, dialogue, subtitles, logos, or watermarks.

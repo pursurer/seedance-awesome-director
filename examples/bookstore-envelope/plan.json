@@ -1,0 +1,53 @@
+{
+  "duration_seconds": 12,
+  "references": [
+    {"id": "Image1", "role": "identity and wardrobe"},
+    {"id": "Image2", "role": "storyboard, location, action, composition and order"}
+  ],
+  "shots": [
+    {
+      "id": 1,
+      "start": 0,
+      "end": 3,
+      "action": "approach the bookstore door",
+      "camera": "wide exterior",
+      "audio": "footsteps on damp pavement",
+      "entry_state": "outside on sidewalk, blue envelope in right hand",
+      "exit_state": "at green door, blue envelope in right hand",
+      "references": ["Image1", "Image2"]
+    },
+    {
+      "id": 2,
+      "start": 3,
+      "end": 6,
+      "action": "open the green door with left hand",
+      "camera": "medium threshold",
+      "audio": "brass handle and door movement",
+      "entry_state": "at green door, blue envelope in right hand",
+      "exit_state": "inside bookstore, blue envelope in right hand",
+      "references": ["Image1", "Image2"]
+    },
+    {
+      "id": 3,
+      "start": 6,
+      "end": 9,
+      "action": "place blue envelope on oak counter",
+      "camera": "medium interior",
+      "audio": "paper touching wood",
+      "entry_state": "inside bookstore, blue envelope in right hand",
+      "exit_state": "inside bookstore, blue envelope on oak counter",
+      "references": ["Image1", "Image2"]
+    },
+    {
+      "id": 4,
+      "start": 9,
+      "end": 12,
+      "action": "walk toward the door empty-handed",
+      "camera": "wide interior, counter visible in background",
+      "audio": "footsteps",
+      "entry_state": "inside bookstore, blue envelope on oak counter",
+      "exit_state": "at green door, blue envelope still on oak counter",
+      "references": ["Image1", "Image2"]
+    }
+  ]
+}
