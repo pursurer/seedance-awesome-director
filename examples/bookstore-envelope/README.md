@@ -1,20 +1,19 @@
-# Fictional bookstore test / 虚构书店试片
+# Fictional bookstore pilot / 虚构书店试片
 
-**State: `assets-ready`.** The two references, four-shot plan, and video prompt are ready. The video has not been generated or reviewed.
+**State: generated, with a locally edited preview and a documented QA limitation.** This is an original workflow pilot for the [production Skill](../../skills/seedance-production-workflow/SKILL.md), not a GoodCase prompt submission or evidence that the workflow improves video quality over another method.
 
-On 2026-09-23, Dreamina showed Seedance 2.5 with Omni reference. The 12-second, 16:9, 480P option was quoted at 180 credits. The reference upload and generation are still pending; no credits have been spent on this example.
-
-| Character reference / 人物图 | Four-panel storyboard / 四格分镜 |
+| Character reference / 人物图 | Final storyboard / 最终四格分镜 |
 | --- | --- |
-| ![Fictional woman in yellow raincoat holding a blue envelope](character-reference.png) | ![Numbered storyboard for the four shots](storyboard-4panel.png) |
+| ![Fictional woman in a yellow raincoat holding one blue envelope](character-reference.png) | ![Four-shot bookstore storyboard with an inward-opening door](storyboard-4panel.png) |
 
-This fictional test checks four observable points: the same woman across shots; the envelope stays in her right hand through Shot 2; she places it on the counter in Shot 3; she leaves it on the counter in Shot 4. The plan sets four three-second shots within 12 seconds.
+The [12-second source prompt](video-prompt.txt) and [plan](plan.json) use those two images in that order. The character image controls identity and wardrobe; the storyboard controls location, composition, and shot order. Neither asks the video to reproduce the gray studio background or panel borders. The prompt describes one green door opening inward on both entry and exit, hand-to-brass-handle contact, and a single blue envelope left on the oak counter.
 
-## Dreamina / 即梦交接
+## Actual output
 
-1. In AI Video, check which Seedance model, reference mode, duration, ratio, and resolution your account actually offers. If Seedance 2.5 and Omni reference are available, select them.
-2. Upload `character-reference.png` first and `storyboard-4panel.png` second. Insert their actual `@` tags with the UI picker. Replace the textual `Image 1` and `Image 2` labels in [`video-prompt.txt`](video-prompt.txt) with those tags.
-3. If 12 seconds is available, use 12 seconds at 16:9. If not, adjust [`plan.json`](plan.json) and the shot times in the prompt before generation. Select resolution using the available UI options.
-4. Fill in the [run notes](run-notes.md) with the actual model, mode, settings, cost, task ID, date, and video. Inspect the returned video with the [QA rubric](../../skills/seedance-production-workflow/references/qa-rubric.md). Record the second of every failure before a retry.
+- [Unedited Dreamina generation, 12.064 s, 854×480](dreamina-seedance-2.5-raw-12s-480p.mp4) — Dreamina Seedance 2.5, Omni reference, 16:9, 480P; 180 credits consumed in one authorized run on 2026-09-25.
+- [Locally edited preview, 10.000 s, 854×480](dreamina-seedance-2.5-edited-10s-480p.mp4) — starts at 00:02.000 of the source and was re-encoded with FFmpeg. This is **not** a direct 10-second generation.
+- [20-frame contact sheet of the edited preview](edited-10s-contact-sheet.jpg), [run manifest](run-manifest.json), and [timestamped QA](qa.md).
 
-Reference images were generated for this fictional example on 2026-09-23. The prompt and shot plan are original to this project. No third-party creator video or complete case prompt is included. The [Dreamina guide](https://dreamina.capcut.com/seedance/how-to-use-seedance-2-5) describes Omni reference and `@` tags; this example has not yet been run through that interface.
+The generated video retains a small `AI` marker at the upper left despite the prompt's no-watermark request. Sampled frames support the door and envelope sequence; they do not establish that every frame is artifact-free. The run is presented as a traceable pilot with that limitation, not as a perfect output or a matched comparison against another Skill.
+
+The characters and reference images were generated for this fictional project. No third-party creator's full prompt or media is copied here. The repository's upstream contribution is a hand-maintained Skill improvement; prompt-case submissions follow a separate review path.

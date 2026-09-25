@@ -10,7 +10,7 @@ Write only artifacts the chosen route needs. Use one project directory and prese
 | `character-prompt.txt`, `storyboard-prompt.txt` | Image prompts when reference art must be made |
 | `storyboard.png` or shot keyframes | Checked visual plan for multi-shot generation |
 | `video-prompt.txt` | Copy-ready final prompt with matching shot numbering and reference IDs |
-| `run-manifest.json` | Actual model, platform, date, duration, ratio, resolution, seed if available, asset paths/hashes, task ID and output path; no secret values |
+| `run-manifest.json` | Actual model, platform, date, duration, ratio, resolution, seed if available, asset paths/hashes, task ID and output path; retain the raw output and record any derived edit with its source hash and time offset; no secret values |
 | `qa.md` | Observable result, failure timestamps, targeted revisions and final state |
 
 Minimal `plan.json` shape:

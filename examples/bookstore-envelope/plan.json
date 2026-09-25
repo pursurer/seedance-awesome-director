@@ -20,8 +20,8 @@
       "id": 2,
       "start": 3,
       "end": 6,
-      "action": "open the green door with left hand",
-      "camera": "medium threshold",
+      "action": "grip the exterior brass handle with left hand, push the door inward, then cross the threshold",
+      "camera": "medium exterior threshold from the same street side",
       "audio": "brass handle and door movement",
       "entry_state": "at green door, blue envelope in right hand",
       "exit_state": "inside bookstore, blue envelope in right hand",
@@ -42,11 +42,11 @@
       "id": 4,
       "start": 9,
       "end": 12,
-      "action": "walk toward the door empty-handed",
-      "camera": "wide interior, counter visible in background",
-      "audio": "footsteps",
+      "action": "grip the interior brass handle with right hand, pull the same door inward, and exit empty-handed",
+      "camera": "wide interior with door and counter visible",
+      "audio": "handle, door and footsteps",
       "entry_state": "inside bookstore, blue envelope on oak counter",
-      "exit_state": "at green door, blue envelope still on oak counter",
+      "exit_state": "outside, blue envelope still on oak counter",
       "references": ["Image1", "Image2"]
     }
   ]

@@ -2,7 +2,7 @@
 
 这是一个把 Seedance 视频从想法推进到实际成片检查的独立 Agent Skill：规划参考图和镜头、校验时间轴、准备生成交接包，并按时间点检查和修复结果。
 
-**当前状态：公开预览。** [虚构书店试片](examples/bookstore-envelope/README.md)已备好两张参考图、四镜头计划和可复制的提示词；即梦视频与成片评分尚未完成。目前不宣称比其他工作流画质更好。
+**当前状态：公开试片。** [虚构书店试片](examples/bookstore-envelope/README.md)包含两张参考图、实际提交的 12 秒提示词、[即梦原片](examples/bookstore-envelope/dreamina-seedance-2.5-raw-12s-480p.mp4)、[本地裁剪的 10 秒版](examples/bookstore-envelope/dreamina-seedance-2.5-edited-10s-480p.mp4)和[核对记录](examples/bookstore-envelope/qa.md)。输出左上角仍有 `AI` 标记；目前不宣称比其他工作流画质更好。
 
 [English](README.md)
 
@@ -14,7 +14,7 @@
 - [可修改的制作模板](skills/seedance-production-workflow/references/editable-template.md)：brief、参考图、分镜与视频提示词字段
 - [时间轴预检脚本](skills/seedance-production-workflow/scripts/validate_plan.py)：检查镜头顺序、时长、必填字段和参考图 ID
 - [成片检查表](skills/seedance-production-workflow/references/qa-rubric.md)：按时间点定位失败并决定最小改动
-- [书店试片示例](examples/bookstore-envelope/README.md)：原创四镜头情境、两张图、计划和提示词
+- [书店试片示例](examples/bookstore-envelope/README.md)：原创四镜头情境、两张图、计划、提示词、原片、剪辑版与来源记录
 
 Skill 会按任务选控制件。单镜头可以只用时间轴；需要严格镜头顺序时用编号分镜；需要人物或产品一致性时再加主参考图。参考图只能提供控制信号，最终是否稳定要看真实成片。
 
@@ -36,12 +36,12 @@ cp -R seedance-awesome-director/skills/seedance-production-workflow ~/.codex/ski
 
 准备阶段不需要付费 API。真正提交 Seedance 时，以你账号中可用的模型、时长、参考模式和费用为准，并记录任务 ID、参数和结果。
 
-## 试用本仓库示例
+## 查看或复现本仓库试片
 
 1. 看 [brief](examples/bookstore-envelope/brief.md)、[参考图职责](examples/bookstore-envelope/reference-map.md) 和 [四镜头计划](examples/bookstore-envelope/plan.json)。
 2. 运行 `python3 skills/seedance-production-workflow/scripts/validate_plan.py examples/bookstore-envelope/plan.json`。
-3. 按 [即梦交接说明](examples/bookstore-envelope/README.md)上传素材，并使用界面实际显示的 `@` 标签和时长。
-4. 成片后按 [检查表](skills/seedance-production-workflow/references/qa-rubric.md)逐秒记录失败位置，再决定是否局部修复或重跑。
+3. 查看[原片](examples/bookstore-envelope/dreamina-seedance-2.5-raw-12s-480p.mp4)、[剪辑版](examples/bookstore-envelope/dreamina-seedance-2.5-edited-10s-480p.mp4)、[运行清单](examples/bookstore-envelope/run-manifest.json)及[核对记录](examples/bookstore-envelope/qa.md)。剪辑版删除了原片 00:00–00:02，并非第二次生成。
+4. 如要在自己的即梦账号复现，先核对当前模型、参考模式、时长、画幅、分辨率与积分价格；按[检查表](skills/seedance-production-workflow/references/qa-rubric.md)检查自己的成片，不把本次单样本当作必然结果。
 
 运行 `python3 -m unittest discover -s skills/seedance-production-workflow/scripts -p 'test_*.py'` 可检查预检脚本。本仓库的试片提示词、图片和 Skill 文本为此次项目制作；Skill 只链接 [awesome-seedance](https://github.com/LearnPrompt/awesome-seedance) 的相关结构模板，没有转载创作者的完整案例提示词或媒体。
 

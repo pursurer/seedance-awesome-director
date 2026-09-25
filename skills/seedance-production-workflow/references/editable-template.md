@@ -14,6 +14,7 @@ Use this as a form, not as a claim that every Seedance interface accepts every c
 | `shots` | Ordered shot count and each shot's time range |
 | `camera` | Per-shot framing and movement |
 | `continuity` | Details that must persist, including hand/object position |
+| `spatial_anchors` | For a doorway or similar transition: subject side, camera side, fixed hinge/contact point, and motion direction before and after the cut |
 | `audio` | Ambience, effects, music, speech, or silence |
 | `reference_assets` | Existing media, owner/rights, and intended control role |
 | `entry_point` | Exact product UI or API the user will run |
@@ -42,7 +43,7 @@ Panel 2, [start-end seconds]: Begin from Panel 1 end state. [one visible action]
 Do not add panels, rearrange actions, or invent objects. Keep panel borders clear. This board fixes intended composition and order; it does not guarantee the video model will obey it.
 ```
 
-Inspect the board for panel count, labels, identity, and object continuity. Record its ID (for example, `Image2`). If the entry point cannot use a grid effectively, use per-shot keyframes or a shot list instead.
+Inspect the board for panel count, labels, identity, object continuity, and the physical side of any threshold or prop interaction. Compare each panel's depicted entry state and contact point to the written shot plan. Record its ID (for example, `Image2`). If the entry point cannot use a grid effectively, use per-shot keyframes or a shot list instead.
 
 ## 3. Final video prompt
 

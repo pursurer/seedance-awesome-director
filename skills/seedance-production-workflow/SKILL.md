@@ -24,7 +24,7 @@ This Skill coordinates production and review. For case-backed prompt structure, 
 
 Write `brief.md`, `reference-map.md`, `plan.json`, and the needed prompts in a project directory. Use [the editable template](references/editable-template.md) to collect inputs and draft original prompts; use [deliverable definitions](references/deliverables.md) for fields and state handoff. References need stable IDs, source/rights status, the properties they control, and properties they must not control. Do not copy a creator's complete published prompt into a new original case; cite an anchor case and adapt the structure.
 
-For multi-shot work, each shot needs a start/end time, one visible action, a camera framing, entry state, exit state, and audio. Make the next shot start from the preceding exit state. Generate or request the character/product reference and storyboard; inspect the images before sending them to Seedance. If an image tool is unavailable, deliver exact image prompts and mark the images pending.
+For multi-shot work, each shot needs a start/end time, one visible action, a camera framing, entry state, exit state, and audio. Make the next shot start from the preceding exit state. For a threshold or object interaction, also fix the subject's side, camera side, contact point, and motion direction across the cut. Generate or request the character/product reference and storyboard; compare every panel against the written entry/exit states before sending them to Seedance. A panel that puts a person on the wrong side of a door can override a correct text prompt. If an image tool is unavailable, deliver exact image prompts and mark the images pending.
 
 Run the `scripts/validate_plan.py` located beside this SKILL.md against `<project>/plan.json` using its absolute path. Resolve reported duration, order, or missing-reference errors before video generation. Visually check image identity and panel order as well; the script cannot judge those.
 
@@ -35,6 +35,8 @@ Return a copy-ready Seedance prompt plus an ordered reference upload map and act
 When an authorized and available video tool/API exists, submit the request, save task ID and settings in `run-manifest.json`, retrieve the result, and inspect it. Generation can incur credits and may upload assets: obtain authorization for the actual service, assets, and spend before that external step. Never read or publish credentials. If there is no usable video tool, give exact UI handoff instructions and mark the project `assets-ready`, then resume QA when the user supplies the output.
 
 Review the actual video using [the QA rubric](references/qa-rubric.md). Record failures with shot/time, observation, and narrow repair. Use local or timestamped edits when possible; otherwise revise only the faulty reference, panel, or shot prompt. Compare against the same model/settings when assessing an improvement. Respect the agreed retry or cost limit, and report remaining failures honestly.
+
+If a local trim or other post-processing is selected, retain the unedited model output and record the source hash, edit operation, derived file, and time offset in the run manifest. Review the delivered edit as well as the source; never present an edited preview as a direct model generation.
 
 ## Finish
 

@@ -8,7 +8,7 @@ Inspect the generated video, not only its prompt or poster. Record model, run ID
 | Identity/product lock | Distinguishing face, clothing, geometry, colors and logos do not switch across cuts |
 | State handoff | Props, hands, positions, doors, weather and time of day change only through visible or plausible actions |
 | Motion/physics | Main action completes; limbs/objects do not teleport, merge, or change count |
-| Spatial continuity | Camera changes do not silently rearrange a persistent set |
+| Spatial continuity | Camera changes preserve the persistent set, subject side of a threshold, hinge/handle location, and direction of travel or swing |
 | Audio | Dialogue/voice, ambient sound and effects match the relevant shot; lip sync when requested |
 | Output hygiene | Duration, aspect ratio, resolution, subtitles, watermark and unwanted text match the brief |
 

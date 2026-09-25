@@ -1,0 +1,43 @@
+{
+  "date": "2026-09-25",
+  "timezone": "Europe/Paris",
+  "platform": "Dreamina web",
+  "model": "Dreamina Seedance 2.5",
+  "reference_mode": "Omni reference",
+  "requested_duration_seconds": 12,
+  "aspect_ratio": "16:9",
+  "resolution": "854x480",
+  "credits_consumed": 180,
+  "seed": null,
+  "task_id": null,
+  "task_id_note": "The Dreamina page did not display a distinct task ID.",
+  "references_in_upload_order": [
+    {
+      "id": "Image1",
+      "file": "character-reference.png",
+      "role": "identity and wardrobe",
+      "sha256": "9a19781f6ac9f25221be7fe9914d1e3fee4a9e69861dc506e82e26cbc6bb3897"
+    },
+    {
+      "id": "Image2",
+      "file": "storyboard-4panel.png",
+      "role": "scene, action, composition and order",
+      "sha256": "0d369e0948c676d4d834611035d9ca643a4603f5462161b90b9760418b2fbc2e"
+    }
+  ],
+  "prompt": {
+    "file": "video-prompt.txt",
+    "sha256": "6d74dfdabbf297c59f66a42e267fa72bdac2bfb494a299cedf3c58185dd8cf8e"
+  },
+  "source_output": {
+    "file": "dreamina-seedance-2.5-raw-12s-480p.mp4",
+    "duration_seconds": 12.063991,
+    "sha256": "fc02048176b40804ddcaf79c6f84b43591cb91ca69f06f144cb99b2b4e6dec0e"
+  },
+  "derived_output": {
+    "file": "dreamina-seedance-2.5-edited-10s-480p.mp4",
+    "edit": "Trim the first 2.000 seconds from source_output, then re-encode with FFmpeg to a 10.000-second H.264/AAC MP4.",
+    "duration_seconds": 10.0,
+    "sha256": "b0521c933e1dc55d67f6e05662345b2218c3d10d3906fc2ccbeb61516b0ac9a7"
+  }
+}
