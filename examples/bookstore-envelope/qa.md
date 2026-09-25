@@ -19,4 +19,4 @@ The sampled images show the requested shot order, character look, envelope state
 | Audio | Not reviewed |
 | Output hygiene | 854×480 and exactly 10.000 s in the edited file; `AI` marker conflicts with the no-watermark prompt |
 
-No second generation or repair was attempted after this result. The edited preview was selected for presentation with these limitations documented.
+No second generation or repair was attempted after this result. The edited 10-second video was selected as the final submission with these limitations documented.
