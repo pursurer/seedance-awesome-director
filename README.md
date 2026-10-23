@@ -1,5 +1,7 @@
 # Seedance Awesome Director
 
+[![test](https://github.com/pursurer/seedance-awesome-director/actions/workflows/test.yml/badge.svg)](https://github.com/pursurer/seedance-awesome-director/actions/workflows/test.yml)
+
 An independent Agent Skill for taking a Seedance video from a brief to a checked result. It plans references and shots, validates timing, prepares a generation handoff, and reviews the returned video shot by shot.
 
 **Status:** public pilot. The submitted video for the [fictional bookstore example](examples/bookstore-envelope/README.md) is the [10-second final cut of AI-generated Dreamina footage](examples/bookstore-envelope/dreamina-seedance-2.5-edited-10s-480p.mp4). It removes the first 2 seconds of the [unedited 12-second generation](examples/bookstore-envelope/dreamina-seedance-2.5-raw-12s-480p.mp4), which is retained for provenance. The example also includes the reference images, exact submitted prompt, and [QA notes](examples/bookstore-envelope/qa.md). The video retains an `AI` marker; no quality improvement over another workflow is claimed.

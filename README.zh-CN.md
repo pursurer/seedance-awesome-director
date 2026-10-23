@@ -1,5 +1,7 @@
 # Seedance Awesome Director
 
+[![test](https://github.com/pursurer/seedance-awesome-director/actions/workflows/test.yml/badge.svg)](https://github.com/pursurer/seedance-awesome-director/actions/workflows/test.yml)
+
 这是一个把 Seedance 视频从想法推进到实际成片检查的独立 Agent Skill：规划参考图和镜头、校验时间轴、准备生成交接包，并按时间点检查和修复结果。
 
 **当前状态：公开试片。** [虚构书店试片](examples/bookstore-envelope/README.md)提交展示的成片是[即梦 AI 生成画面的 10 秒最终版](examples/bookstore-envelope/dreamina-seedance-2.5-edited-10s-480p.mp4)：从[未经剪辑的约 12 秒原片](examples/bookstore-envelope/dreamina-seedance-2.5-raw-12s-480p.mp4)裁去开头 2 秒，原片作为来源证据保留。试片还包含两张参考图、实际提交的提示词和[核对记录](examples/bookstore-envelope/qa.md)。成片左上角仍有 `AI` 标记；目前不宣称比其他工作流画质更好。
