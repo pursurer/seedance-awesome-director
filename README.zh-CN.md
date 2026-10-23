@@ -36,6 +36,10 @@ cp -R seedance-awesome-director/skills/seedance-production-workflow ~/.codex/ski
 
 准备阶段不需要付费 API。真正提交 Seedance 时，以你账号中可用的模型、时长、参考模式和费用为准，并记录任务 ID、参数和结果。
 
+## 也可从 awesome-seedance 安装
+
+同一个 Skill 也收录在 [LearnPrompt/awesome-seedance](https://github.com/LearnPrompt/awesome-seedance/tree/main/agents/skills/seedance-production-workflow)，并在 [skills.sh](https://skills.sh/learnprompt/awesome-seedance/seedance-production-workflow) 上架。本仓库保留独立源码和可复现试片；上游对校验器的修复会同步回本仓库。
+
 ## 查看或复现本仓库试片
 
 1. 看 [brief](examples/bookstore-envelope/brief.md)、[参考图职责](examples/bookstore-envelope/reference-map.md) 和 [四镜头计划](examples/bookstore-envelope/plan.json)。

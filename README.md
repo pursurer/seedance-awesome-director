@@ -36,6 +36,10 @@ Start a new Codex task and ask: `Use $seedance-production-workflow to plan a 12-
 
 This Skill does not require a paid API to prepare the package. Video submission uses the Seedance entry point available to the user and may consume credits. The Skill records the actual model, settings, cost, and result when that step is run.
 
+## Also distributed by awesome-seedance
+
+The same Skill ships in [LearnPrompt/awesome-seedance](https://github.com/LearnPrompt/awesome-seedance/tree/main/agents/skills/seedance-production-workflow) and is listed on [skills.sh](https://skills.sh/learnprompt/awesome-seedance/seedance-production-workflow). This repository stays the standalone source with the runnable pilot; validator fixes made upstream are backported here.
+
 ## Inspect or reproduce the pilot
 
 1. Inspect the [example brief](examples/bookstore-envelope/brief.md), [reference map](examples/bookstore-envelope/reference-map.md), and [four-shot plan](examples/bookstore-envelope/plan.json).
